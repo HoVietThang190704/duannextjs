@@ -126,5 +126,18 @@
   }
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
+  }
+  section {
+    scroll-margin-top: 5rem;
+  }
+  .animate__animated {
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .shadow-inner {
+    box-shadow: inset 0 -2px 12px rgba(15, 23, 42, 0.06);
   }
 }
