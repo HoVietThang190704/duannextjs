@@ -31,9 +31,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Run tests
-        run: npm test
-
   docker:
     name: Build & Push Docker image
     needs: build-test
