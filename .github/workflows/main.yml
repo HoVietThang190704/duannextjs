@@ -63,8 +63,8 @@ jobs:
       - name: Push Docker image
         run: |
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/duannextjs:latest
-      
-            - name: Triển khai lên DevOps Classroom
+
+      - name: Triển khai lên DevOps Classroom
         run: |
           REPO="itcoder646/duannextjs"
           CONTAINER_PORT=3000
